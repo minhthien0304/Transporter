@@ -1,0 +1,30 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorNavigationBar"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/backIcon"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_circle"
+        >
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_white_black_24dp"
+            />
+    </RelativeLayout>
+    <com.mrt.transporter.customview.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        app:font="@string/fontRobotoRegular" />
+</RelativeLayout>

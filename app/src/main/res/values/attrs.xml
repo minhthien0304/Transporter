@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyFont">
+        <attr name="font" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyHintText">
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyIcon">
+        <attr name="icon_input" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyMenu">
+        <attr name="text" format="string"/>
+        <attr name="img_res" format="reference"/>
+    </declare-styleable>
+    <!--<declare-styleable name="MyCustomInput">-->
+        <!--<attr name="img_icon" format="reference"/>-->
+        <!--<attr name="text" format="string"/>-->
+    <!--</declare-styleable>-->
+</resources>

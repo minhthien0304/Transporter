@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Transporter</string>
+
+    <string name="fontRobotoLight">fonts/Roboto-Light.ttf</string>
+    <string name="fontRobotoMedium">fonts/Roboto-Medium.ttf</string>
+    <string name="fontRobotoBold">fonts/Roboto-Bold.ttf</string>
+    <string name="fontRobotoRegular">fonts/Roboto-Regular.ttf</string>
+    <string name="fontRobotoLightItalic">fonts/Roboto-LightItalic.ttf</string>
+    <string name="fontRobotoBoldItalic">fonts/Roboto-BoldItalic.ttf</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- multi language -->
+    <string name="signup">Sign up</string>
+    <string name="login">Login</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="dob">Date of birth</string>
+    <string name="or">Or</string>
+    <string name="createAcc">Create Account</string>
+    <string name="home">Home</string>
+    <string name="chart">Chart</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="create">Create new</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

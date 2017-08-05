@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27374E"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/backIcon"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_circle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_white_black_24dp" />
+        </RelativeLayout>
+
+        <com.mrt.transporter.customview.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/signup"
+            android:textColor="@color/White"
+            android:textSize="24sp"
+            app:font="@string/fontRobotoRegular" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutImgU"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_image"
+                android:layout_marginTop="14dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvaMessage"
+                    android:layout_width="99dp"
+                    android:layout_height="99dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/imguser" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical">
+
+                <com.mrt.transporter.customview.MyInputIcon
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    app:hintText="@string/email"
+                    app:icon_input="@drawable/ic_mail_white_24dp" />
+
+                <com.mrt.transporter.customview.MyInputIcon
+                    android:id="@+id/etPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    app:hintText="@string/pass"
+                    app:icon_input="@drawable/ic_lock" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.mrt.transporter.customview.MyInputIcon
+                        android:id="@+id/etFName"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="12dp"
+                        app:hintText="@string/firstname"
+                        app:icon_input="@drawable/ic_user"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="12dp">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/text_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/imgicon"
+                            android:textColorHint="#A7B7CE"
+                            android:hint="@string/lastname"
+                            >
+
+                            <com.mrt.transporter.customview.MyEditText
+                                android:id="@+id/etLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:font="@string/fontRobotoLight"
+                                android:textColor="@color/White"
+                                android:paddingTop="5dp"
+                                android:background="@null"
+                                android:paddingBottom="3dp"
+                                android:maxLines="1"
+                                android:inputType="textPersonName"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                        <View
+                            android:id="@+id/vUnderline"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/text_input_layout"
+                            android:layout_toRightOf="@+id/imgicon"
+                            android:background="@color/line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.mrt.transporter.customview.MyInputIcon
+                    android:id="@+id/etDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    app:hintText="@string/dob"
+                    app:icon_input="@drawable/ic_calendar" />
+
+                <com.mrt.transporter.customview.MyInputIcon
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    app:hintText="@string/phone"
+                    app:icon_input="@drawable/ic_phone_white_24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_male" />
+
+                        <RadioButton
+                            android:id="@+id/rbmale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/White"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/male"
+                            android:textColor="@color/White"
+                            android:checked="true"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="24dp"
+                            android:src="@drawable/ic_female" />
+
+                        <RadioButton
+                            android:id="@+id/rbFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/White"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/female"
+                            android:textColor="@color/White" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.mrt.transporter.customview.MyButton
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/signup"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    app:font="@string/fontRobotoRegular" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#35404F</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="bgLogin">#D9041731</color>
+
+    <color name="green1">#2CCE4B</color>
+    <color name="red">#E85555</color>
+    <color name="White">#FFFFFF</color>
+    <color name="gray">#dadbde</color>
+    <color name="green">#1FA782</color>
+    <color name="colorNavigationBar">#27374E</color>
+    <color name="colorNavigationBarSelected">#14273C</color>
+    <color name="line">#4A576B</color>
+    <color name="gray_selected">#66FFFFFF</color>
+</resources>

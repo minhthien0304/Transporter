@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/imgbglogin"
+        android:scaleType="fitXY"
+        android:alpha="0.22"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgLogin"
+        >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <com.mrt.transporter.customview.MyTextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/White"
+            android:layout_marginTop="229dp"
+            app:font="@string/fontRobotoRegular"
+            android:textSize="36sp"
+            android:textAlignment="center"/>
+        <com.mrt.transporter.customview.MyInputIcon
+            android:id="@+id/etUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="292dp"
+            app:icon_input="@drawable/ic_user"
+            app:hintText="@string/email"/>
+        <com.mrt.transporter.customview.MyInputIcon
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="349dp"
+            app:icon_input="@drawable/ic_lock"
+            app:hintText="@string/pass"/>
+        <com.mrt.transporter.customview.MyButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:background="@drawable/button_bg"
+            android:height="57dp"
+            android:textSize="20sp"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:layout_marginTop="412dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:font="@string/fontRobotoRegular"/>
+        <com.mrt.transporter.customview.MyTextView
+            android:id="@+id/tvOr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textColor="@color/White"
+            android:layout_marginTop="487dp"
+            app:font="@string/fontRobotoRegular"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+        <com.mrt.transporter.customview.MyTextView
+            android:id="@+id/tvCreateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/White"
+            android:layout_marginTop="522dp"
+            app:font="@string/fontRobotoRegular"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+        <View android:layout_below="@+id/tvCreateAcc"
+            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@+id/tvCreateAcc"
+            android:background="@color/White"
+            android:layout_height="1dp"
+            android:layout_width="wrap_content"
+            android:layout_alignEnd="@+id/tvCreateAcc"/>
+    </RelativeLayout>
+
+</RelativeLayout>

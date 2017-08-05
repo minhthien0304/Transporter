@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    >
+
+    <ImageView
+        android:id="@+id/imgItemTabView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.mrt.transporter.customview.MyTextView
+        android:id="@+id/sumnoti"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="-10dp"
+        android:textSize="7sp"
+        android:textColor="@color/White"
+        android:layout_toRightOf="@+id/imgItemTabView"
+        android:visibility="gone"
+        app:font="@string/fontRobotoRegular"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- multi language -->
+    <string name="login">Đăng nhập</string>
+    <string name="signup">Đăng ký</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="firstname">Họ</string>
+    <string name="lastname">Tên</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="email">Hòm thư</string>
+    <string name="phone">Điện thoại</string>
+    <string name="or">Hoặc</string>
+    <string name="createAcc">Tạo tài khoản</string>
+    <string name="home">Trang chính</string>
+    <string name="chart">Biểu đồ</string>
+    <string name="setting">Cài đặt</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="dob">Ngày sinh</string>
+    <string name="create">Tạo mới</string>
+
+</resources>

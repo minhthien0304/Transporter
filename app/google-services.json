@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "407331465969",
+    "firebase_url": "https://finalproject-174616.firebaseio.com",
+    "project_id": "finalproject-174616",
+    "storage_bucket": "finalproject-174616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407331465969:android:6a95ef8c2bd6e15c",
+        "android_client_info": {
+          "package_name": "com.mrt.transporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407331465969-il0le1l6cbdkjpk1sohfk7iq43iv1jj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAa-TtWu1ph1hrWZ3W_cgrUTR2HhnasYg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

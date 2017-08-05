@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrt.transporter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <FrameLayout
+            android:id="@+id/mainFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"></FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/leftLayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@color/colorNavigationBar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvaMessage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/imguser"
+            app:civ_border_color="@color/White"
+            app:civ_border_width="1dp" />
+
+        <com.mrt.transporter.customview.MyTextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:text="Minh Thien"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            app:font="@string/fontRobotoRegular" />
+        <LinearLayout
+            android:id="@+id/lnMenu"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.mrt.transporter.customview.ItemMenu
+                android:id="@+id/menuHome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:text="@string/home"
+                app:img_res="@drawable/ic_home"
+                android:background="@color/colorNavigationBarSelected"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line"/>
+            <com.mrt.transporter.customview.ItemMenu
+                android:id="@+id/menuChart"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:text="@string/chart"
+                app:img_res="@drawable/ic_area_chart"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line"/>
+            <com.mrt.transporter.customview.ItemMenu
+                android:id="@+id/menuSetting"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:text="@string/setting"
+                app:img_res="@drawable/ic_cog"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line"/>
+            <com.mrt.transporter.customview.ItemMenu
+                android:id="@+id/menuLogout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:text="@string/logout"
+                app:img_res="@drawable/ic_logout"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
