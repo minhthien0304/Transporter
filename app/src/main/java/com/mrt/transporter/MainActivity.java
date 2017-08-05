@@ -34,6 +34,7 @@ public class MainActivity extends BaseActivity {
     ItemMenu menuLogout;
     private int select = 0;
 
+
     @Override
     public void setLayout() {
         res = R.layout.activity_main;
